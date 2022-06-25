@@ -1,0 +1,13 @@
+.divBtn{
+    margin-left: auto;
+    margin-right: 0;
+    .btn{
+        transition: none;
+        &:hover{
+            border: none;
+        }
+        i{
+            color: $colorTexto;
+        }
+    }
+}
