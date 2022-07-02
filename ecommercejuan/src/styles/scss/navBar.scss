@@ -1,0 +1,13 @@
+@import 'colores.scss';
+
+$navbar-light-color:                rgba($colorTexto, .65);
+$navbar-light-hover-color:          rgba($colorTexto, .8);
+$navbar-light-active-color:         rgba($colorTexto, 1);
+$navbar-light-brand-color:          $colorBrand;
+$navbar-light-brand-hover-color:    $colorBrand;
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+nav{
+    background-color: $colorNavbar;
+}
