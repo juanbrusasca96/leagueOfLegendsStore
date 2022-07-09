@@ -2972,7 +2972,7 @@ textarea.form-control-lg {
   --bs-navbar-color: rgba(205, 190, 145, 0.65);
   --bs-navbar-hover-color: rgba(205, 190, 145, 0.8);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
-  --bs-navbar-active-color: #cdbe91;
+  --bs-navbar-active-color: #ddcf81;
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
@@ -8345,6 +8345,8 @@ textarea.form-control-lg {
 
 nav {
   background-color: #1f536b; }
+  nav .NavLink {
+    text-decoration: none; }
 
 .divBtn {
   margin-left: auto;
@@ -8416,6 +8418,62 @@ nav {
   .item .card-button:hover {
     border: 1px solid #ddcf81;
     background-color: #ddcf81; }
+
+.loading .scanner h1, .loading .scanner .h1 {
+  color: transparent;
+  font-size: 1.4rem;
+  position: relative;
+  overflow: hidden; }
+
+.loading .scanner h1::before, .loading .scanner .h1::before {
+  content: "Loading...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 4px solid #1f536b;
+  overflow: hidden;
+  color: #1f536b;
+  animation: load91371 1.5s linear infinite; }
+
+@keyframes load91371 {
+  0%,
+  10%,
+  100% {
+    width: 0; }
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    border-right-color: transparent; }
+  11%,
+  21%,
+  31%,
+  41%,
+  51%,
+  61%,
+  71%,
+  81%,
+  91% {
+    border-right-color: #1f536b; }
+  60%,
+  80% {
+    width: 100%; } }
+
+.itemDetailContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; }
+
+.itemDetail {
+  color: #1f536b; }
 
 body {
   font-family: 'Friz Quadrata Std', sans-serif; }

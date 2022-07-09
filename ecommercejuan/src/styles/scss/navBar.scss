@@ -2,7 +2,7 @@
 
 $navbar-light-color:                rgba($colorTexto, .65);
 $navbar-light-hover-color:          rgba($colorTexto, .8);
-$navbar-light-active-color:         rgba($colorTexto, 1);
+$navbar-light-active-color:         rgba($colorBrand, 1);
 $navbar-light-brand-color:          $colorBrand;
 $navbar-light-brand-hover-color:    $colorBrand;
 
@@ -10,4 +10,7 @@ $navbar-light-brand-hover-color:    $colorBrand;
 
 nav{
     background-color: $colorNavbar;
+    .NavLink{
+        text-decoration: none;
+    }
 }
