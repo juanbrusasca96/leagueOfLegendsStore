@@ -1,5 +1,64 @@
 @import 'colores.scss';
 
-.itemDetail{
+.itemDetail {
     color: $colorNavbar;
+    margin: 3%;
+
+    .imagenPosicionDificultadPrecioBiografia {
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+
+        .imagenPosicionDificultadPrecio {
+            margin: 2%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .posicionDificultadPrecio {
+                margin-top: 2%;
+                // border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                display: grid;
+                grid-template-areas: "columna1 columna2 columna3";
+
+                h3 {
+                    margin-top: 2%;
+                }
+
+                .posicion {
+                    margin-top: 2%;
+                    grid-area: columna1;
+                }
+
+                .dificultadPadre {
+                    grid-area: columna2;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .dificultad {
+                        margin-left: 2%;
+                        display: flex;
+                    }
+                }
+
+                .precio {
+                    grid-area: columna3;
+                }
+            }
+        }
+
+        .biografia {
+            width: 100%;
+            margin: 2%;
+        }
+    }
+
+
 }

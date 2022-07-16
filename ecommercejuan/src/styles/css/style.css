@@ -8347,6 +8347,8 @@ nav {
   background-color: #1f536b; }
   nav .NavLink {
     text-decoration: none; }
+  nav p {
+    color: #cdbe91; }
 
 .divBtn {
   margin-left: auto;
@@ -8419,23 +8421,24 @@ nav {
     border: 1px solid #ddcf81;
     background-color: #ddcf81; }
 
-.loading .scanner h1, .loading .scanner .h1 {
-  color: transparent;
-  font-size: 1.4rem;
-  position: relative;
-  overflow: hidden; }
-
-.loading .scanner h1::before, .loading .scanner .h1::before {
-  content: "Loading...";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  border-right: 4px solid #1f536b;
-  overflow: hidden;
-  color: #1f536b;
-  animation: load91371 1.5s linear infinite; }
+.loading {
+  margin-top: 3%; }
+  .loading .scanner h1, .loading .scanner .h1 {
+    color: transparent;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden; }
+  .loading .scanner h1::before, .loading .scanner .h1::before {
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid #1f536b;
+    overflow: hidden;
+    color: #1f536b;
+    animation: load91371 1.5s linear infinite; }
 
 @keyframes load91371 {
   0%,
@@ -8468,12 +8471,109 @@ nav {
     width: 100%; } }
 
 .itemDetailContainer {
-  margin-top: 50px;
   display: flex;
   justify-content: center; }
 
 .itemDetail {
-  color: #1f536b; }
+  color: #1f536b;
+  margin: 3%; }
+  .itemDetail .imagenPosicionDificultadPrecioBiografia {
+    display: flex;
+    font-family: 'Poppins', sans-serif; }
+    .itemDetail .imagenPosicionDificultadPrecioBiografia .imagenPosicionDificultadPrecio {
+      margin: 2%;
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .itemDetail .imagenPosicionDificultadPrecioBiografia .imagenPosicionDificultadPrecio img {
+        width: 100%;
+        height: 100%; }
+      .itemDetail .imagenPosicionDificultadPrecioBiografia .imagenPosicionDificultadPrecio .posicionDificultadPrecio {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        display: grid;
+        grid-template-areas: "columna1 columna2 columna3"; }
+        .itemDetail .imagenPosicionDificultadPrecioBiografia .imagenPosicionDificultadPrecio .posicionDificultadPrecio h3, .itemDetail .imagenPosicionDificultadPrecioBiografia .imagenPosicionDificultadPrecio .posicionDificultadPrecio .h3 {
+          margin-top: 2%; }
+        .itemDetail .imagenPosicionDificultadPrecioBiografia .imagenPosicionDificultadPrecio .posicionDificultadPrecio .posicion {
+          margin-top: 2%;
+          grid-area: columna1; }
+        .itemDetail .imagenPosicionDificultadPrecioBiografia .imagenPosicionDificultadPrecio .posicionDificultadPrecio .dificultadPadre {
+          grid-area: columna2;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .itemDetail .imagenPosicionDificultadPrecioBiografia .imagenPosicionDificultadPrecio .posicionDificultadPrecio .dificultadPadre .dificultad {
+            margin-left: 2%;
+            display: flex; }
+        .itemDetail .imagenPosicionDificultadPrecioBiografia .imagenPosicionDificultadPrecio .posicionDificultadPrecio .precio {
+          grid-area: columna3; }
+    .itemDetail .imagenPosicionDificultadPrecioBiografia .biografia {
+      width: 100%;
+      margin: 2%; }
+
+.dificultad {
+  width: 100px;
+  height: 20px;
+  margin-right: 3%;
+  -moz-transform: skew(-20deg, 0deg);
+  -webkit-transform: skew(-20deg, 0deg);
+  -o-transform: skew(-20deg, 0deg);
+  -ms-transform: skew(-20deg, 0deg);
+  transform: skew(-20deg, 0deg); }
+  .dificultad .active {
+    width: 100%;
+    height: 100%;
+    background: #07d6f6; }
+  .dificultad .no-active {
+    width: 100%;
+    height: 100%;
+    background: #003241; }
+
+.botonComprar button {
+  margin: 3%;
+  font-family: inherit;
+  display: inline-block;
+  width: 12em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #1f536b;
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #1f536b;
+  font-family: 'Friz Quadrata Std', sans-serif; }
+
+.botonComprar button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #1f536b;
+  height: 150px;
+  width: 300px;
+  border-radius: 50%; }
+
+.botonComprar button:hover {
+  color: #ddcf81; }
+
+.botonComprar button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s; }
+
+.botonComprar button:hover:before {
+  top: -30px;
+  left: -30px; }
+
+.botonComprar button:active:before {
+  background: #1f536b;
+  transition: background 0s; }
 
 body {
   font-family: 'Friz Quadrata Std', sans-serif; }

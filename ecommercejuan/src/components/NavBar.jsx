@@ -1,8 +1,12 @@
 import React from 'react'
+import { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { CartContext } from '../helpers/CartContext'
 import CartWidget from './CartWidget'
 
 export default function NavBar() {
+    const [itemsCart] = useContext(CartContext);
+
     return (
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
@@ -37,6 +41,7 @@ export default function NavBar() {
                     <Link to='/cart'>
                         <CartWidget />
                     </Link>
+                    <p>{itemsCart.length}</p>
                     {/* <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button className="btn btn-outline-success" type="submit">Search</button>
