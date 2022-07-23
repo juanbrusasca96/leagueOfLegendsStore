@@ -1,12 +1,16 @@
-.divBtn{
+.divBtn {
     margin-left: auto;
     margin-right: 0;
-    .btn{
+    display: flex;
+
+    .btn {
         transition: none;
-        &:hover{
+
+        &:hover {
             border: none;
         }
-        i{
+
+        i {
             color: $colorTexto;
         }
     }

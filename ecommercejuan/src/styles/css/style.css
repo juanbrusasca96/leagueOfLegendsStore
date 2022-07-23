@@ -8352,7 +8352,8 @@ nav {
 
 .divBtn {
   margin-left: auto;
-  margin-right: 0; }
+  margin-right: 0;
+  display: flex; }
   .divBtn .btn {
     transition: none; }
     .divBtn .btn:hover {
@@ -8574,6 +8575,18 @@ nav {
 .botonComprar button:active:before {
   background: #1f536b;
   transition: background 0s; }
+
+.cart {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .cart .desglose {
+    margin-top: 2%;
+    display: flex; }
+    .cart .desglose img {
+      max-width: 200px;
+      max-height: 200px; }
 
 body {
   font-family: 'Friz Quadrata Std', sans-serif; }

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useContext } from 'react'
 import { Link } from 'react-router-dom';
 import { CartContext } from '../helpers/CartContext'
+import { convertir } from '../helpers/getFetch';
 import Dificultad from './Dificultad'
 import ItemCount from './ItemCount';
 
@@ -44,7 +45,7 @@ export default function ItemDetail({ campeon }) {
               }
               </h3>
             </div>
-            <h3 className='text-center precio'><div className='fw-bolder'>Precio</div><div>${campeon.precio}</div></h3>
+            <h3 className='text-center precio'><div className='fw-bolder'>Precio</div><div>${convertir(campeon.precio)}</div></h3>
           </div>
         </div>
         <div className='biografia'>

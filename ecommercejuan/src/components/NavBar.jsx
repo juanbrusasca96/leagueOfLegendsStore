@@ -38,10 +38,13 @@ export default function NavBar() {
                             <NavLink to='/posicion/Soporte' className={({ isActive }) => isActive ? 'nav-link active fw-bold' : 'nav-link'} aria-current="page" >Soporte</NavLink>
                         </li>
                     </ul>
-                    <Link to='/cart'>
-                        <CartWidget />
-                    </Link>
-                    <p>{itemsCart.length}</p>
+                    {itemsCart.length === 0 ?
+                        <div></div>
+                        :
+                        <Link to='/cart' style={{ textDecoration: 'none' }}>
+                            <CartWidget />
+                        </Link>
+                    }
                     {/* <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button className="btn btn-outline-success" type="submit">Search</button>
