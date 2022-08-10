@@ -4,7 +4,6 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("http://fonts.cdnfonts.com/css/friz-quadrata-std");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8666,7 +8665,7 @@ nav {
   font-weight: 500;
   color: #1f536b;
   font-size: 1.3vw;
-  font-family: 'Friz Quadrata Std', sans-serif; }
+  font-family: 'Cinzel', serif; }
 
 .button button:before {
   content: "";
@@ -8903,7 +8902,7 @@ nav {
   cursor: pointer;
   height: 2.6em;
   font-weight: 700;
-  font-family: 'Friz Quadrata Std', sans-serif;
+  font-family: 'Cinzel', serif;
   transition: all .2s;
   padding-left: 3px;
   border-radius: 7.321vw;
@@ -8926,4 +8925,4 @@ nav {
   transform: scale(0.95); }
 
 body {
-  font-family: 'Friz Quadrata Std', sans-serif; }
+  font-family: 'Cinzel', serif; }
