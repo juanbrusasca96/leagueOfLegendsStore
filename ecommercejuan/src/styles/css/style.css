@@ -8372,7 +8372,7 @@ nav {
         display: flex;
         flex-direction: row; }
         nav .navbar-collapse .navbar-nav .nav-item {
-          margin-left: 15%; } }
+          margin-left: 5%; } }
 
 @media screen and (max-width: 450px) {
   nav {
@@ -8388,8 +8388,6 @@ nav {
       nav .navbar-collapse .navbar-nav {
         display: flex;
         flex-direction: column; }
-        nav .navbar-collapse .navbar-nav .nav-item {
-          margin-left: 15%; }
       nav .navbar-collapse .cartWidget {
         width: 100%;
         display: flex; } }
