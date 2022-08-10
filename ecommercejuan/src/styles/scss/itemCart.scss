@@ -127,3 +127,76 @@
         }
     }
 }
+
+@media screen and (min-width: 1500px) {
+    .itemCart {
+        .breakdown {
+            .plusMinus {
+                width: 3vw;
+                font-size: 1vw;
+                margin-left: 1%;
+            }
+
+            h3 {
+                font-size: 1.5vw;
+            }
+
+            h5 {
+                font-size: 1vw;
+            }
+
+            img {
+                margin: 2%;
+                width: 12vw;
+                height: 7vw;
+                border-radius: 10px;
+            }
+
+            .remove {
+                button .icon {
+                    transform: translateX(4.353vw);
+                    height: 1.928vw;
+                    width: 1.528vw;
+                }
+
+                button svg {
+                    width: .898vw;
+                    fill: #eee;
+                }
+
+                button:hover .icon {
+                    width: 6.1%;
+                }
+
+                button {
+                    width: 6.321vw;
+                    height: 3vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .itemCart {
+        .breakdown {
+            .remove {
+                button {
+                    width: 7.821vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .itemCart {
+        .breakdown {
+            .remove {
+                button {
+                    width: 8.321vw;
+                }
+            }
+        }
+    }
+}

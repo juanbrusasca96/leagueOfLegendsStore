@@ -2,6 +2,25 @@
     margin: 5%;
     font-family: 'Poppins', sans-serif;
 
+    // label{
+    //     font-size: 1vw;
+    // }
+
+    // input, select{
+    //     height: 2vw;
+
+    // }
+
+    // // select{
+    // //     option{
+    // //         font-size: 2.5vw; 
+    // //     }
+    // // }
+
+    // .form-select{
+    //     font-size: 1vw;
+    // }
+
     .generatedOrder {
         h1 {
             font-size: 2.7vw;
@@ -51,4 +70,29 @@
     input.danger {
         border: 0.2vw solid red;
     }
+}
+
+@media screen and (min-width: 1500px) {
+    form {
+        label {
+            font-size: 1vw;
+        }
+
+        input,
+        select {
+            height: 2vw;
+
+        }
+
+        select {
+            option {
+                font-size: 2.5vw;
+            }
+        }
+
+        .form-select {
+            font-size: 1vw;
+        }
+    }
+
 }

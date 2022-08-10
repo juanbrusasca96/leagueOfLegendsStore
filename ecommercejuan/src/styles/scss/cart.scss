@@ -33,7 +33,7 @@
             .buttonDelete {
                 .button {
                     button {
-                        border: 2px solid $colorButtonRed;
+                        border: 0.146vw solid $colorButtonRed;
                         color: $colorButtonRed;
                         margin: 0;
                         margin-top: 1%;
@@ -56,6 +56,24 @@
                     margin: 0;
                     margin-top: 1%;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .cart {
+        .noItems {
+            h1 {
+                font-size: 2.2vw;
+            }
+
+        }
+
+        .price {
+
+            h4 {
+                font-size: 1.5vw;
             }
         }
     }

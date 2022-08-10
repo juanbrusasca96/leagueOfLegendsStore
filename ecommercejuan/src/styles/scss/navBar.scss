@@ -10,9 +10,10 @@ nav {
     background-color: $colorNavbar;
     font-size: 1.5vw;
 
-    .navbar-brand{
+    .navbar-brand {
         font-size: 2vw;
-        img{
+
+        img {
             width: 7.687vw;
             height: 3.221vw;
         }
@@ -35,9 +36,10 @@ nav {
     nav {
         font-size: 2.7vw;
 
-        .navbar-brand{
+        .navbar-brand {
             font-size: 2.5vw;
-            img{
+
+            img {
                 width: 9.687vw;
                 height: 4.221vw;
             }
@@ -55,17 +57,33 @@ nav {
                 }
             }
         }
+
+        .navbar-toggler-icon {
+            width: 3.357vw;
+            height: 3.357vw;
+        }
     }
 
+}
+
+@media screen and (min-width: 1500px) {
+    nav {
+        font-size: 1vw;
+
+        .navbar-brand {
+            font-size: 1.3vw;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
     nav {
         font-size: 3.5vw;
 
-        .navbar-brand{
+        .navbar-brand {
             font-size: 3vw;
-            img{
+
+            img {
                 width: 11.687vw;
                 height: 5.221vw;
             }

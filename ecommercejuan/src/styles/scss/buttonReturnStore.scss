@@ -1,4 +1,8 @@
 .returnStore {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
     button {
         cursor: pointer;
         height: 2.6em;
@@ -28,4 +32,26 @@
     button:active {
         transform: scale(0.95);
     }
+}
+
+@media screen and (min-width: 1500px) {
+    .returnStore {
+        button {
+            font-size: 1vw;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .returnStore {
+        height: 24px;
+        margin-top: 1%;
+        display: flex;
+        align-items: center;
+
+        button {
+            font-size: 2.464vw;
+        }
+    }
+
 }

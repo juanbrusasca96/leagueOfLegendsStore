@@ -8372,7 +8372,16 @@ nav {
         display: flex;
         flex-direction: row; }
         nav .navbar-collapse .navbar-nav .nav-item {
-          margin-left: 5%; } }
+          margin-left: 5%; }
+    nav .navbar-toggler-icon {
+      width: 3.357vw;
+      height: 3.357vw; } }
+
+@media screen and (min-width: 1500px) {
+  nav {
+    font-size: 1vw; }
+    nav .navbar-brand {
+      font-size: 1.3vw; } }
 
 @media screen and (max-width: 450px) {
   nav {
@@ -8405,6 +8414,10 @@ nav {
       border: none; }
     .divBtn .btn i {
       color: #cdbe91; }
+
+@media screen and (min-width: 1500px) {
+  .divBtn .fa-lg {
+    font-size: 1.2vw; } }
 
 @media screen and (max-width: 992px) {
   .divBtn .fa-lg {
@@ -8630,6 +8643,15 @@ nav {
       width: 100%;
       margin: 1%; }
 
+@media screen and (min-width: 1500px) {
+  .itemDetail h1, .itemDetail .h1 {
+    font-size: 2.5vw; }
+  .itemDetail h3, .itemDetail .h3 {
+    font-size: 1.8vw; }
+  .itemDetail .imagePositionDifficultPriceBiography .imagePositionDifficultPrice img {
+    width: 100%;
+    max-height: 70%; } }
+
 .difficult {
   width: 7.321vw;
   height: 1.464vw;
@@ -8656,10 +8678,10 @@ nav {
   margin: 20px;
   position: relative;
   overflow: hidden;
-  border: 2px solid #1f536b;
+  border: 0.146vw solid #1f536b;
   transition: color .5s;
   z-index: 1;
-  border-radius: 6px;
+  border-radius: 0.439vw;
   font-weight: 500;
   color: #1f536b;
   font-size: 1.3vw;
@@ -8670,8 +8692,8 @@ nav {
   position: absolute;
   z-index: -1;
   background: #1f536b;
-  height: 150px;
-  width: 330px;
+  height: 10.981vw;
+  width: 24.158vw;
   border-radius: 50%; }
 
 .button button:hover {
@@ -8683,12 +8705,20 @@ nav {
   transition: all .7s; }
 
 .button button:hover:before {
-  top: -30px;
-  left: -30px; }
+  top: -2.196vw;
+  left: -2.196vw; }
 
 .button button:active:before {
   background: #1f536b;
   transition: background 0s; }
+
+@media screen and (min-width: 1500px) {
+  .button button {
+    font-size: 1vw; } }
+
+@media screen and (max-width: 450px) {
+  .button button {
+    font-size: 2.3vw; } }
 
 .cart {
   margin-top: 1%;
@@ -8714,7 +8744,7 @@ nav {
       justify-content: flex-end;
       width: 50%; }
       .cart .price .btns .buttonDelete .button button {
-        border: 2px solid #e62222;
+        border: 0.146vw solid #e62222;
         color: #e62222;
         margin: 0;
         margin-top: 1%;
@@ -8728,6 +8758,12 @@ nav {
         margin: 0;
         margin-top: 1%; }
 
+@media screen and (min-width: 1500px) {
+  .cart .noItems h1, .cart .noItems .h1 {
+    font-size: 2.2vw; }
+  .cart .price h4, .cart .price .h4 {
+    font-size: 1.5vw; } }
+
 .itemCount {
   display: flex;
   flex-direction: column;
@@ -8739,6 +8775,11 @@ nav {
     .itemCount .buttonBuy .plusMinus {
       width: 3vw;
       font-size: 1.3vw; }
+
+@media screen and (min-width: 1500px) {
+  .itemCount .buttonBuy .plusMinus {
+    width: 2.5vw;
+    font-size: 1vw; } }
 
 @media screen and (max-width: 700px) {
   .itemCount .buttonBuy .plusMinus {
@@ -8863,6 +8904,41 @@ nav {
     height: 8vw;
     border-radius: 10px; }
 
+@media screen and (min-width: 1500px) {
+  .itemCart .breakdown .plusMinus {
+    width: 3vw;
+    font-size: 1vw;
+    margin-left: 1%; }
+  .itemCart .breakdown h3, .itemCart .breakdown .h3 {
+    font-size: 1.5vw; }
+  .itemCart .breakdown h5, .itemCart .breakdown .h5 {
+    font-size: 1vw; }
+  .itemCart .breakdown img {
+    margin: 2%;
+    width: 12vw;
+    height: 7vw;
+    border-radius: 10px; }
+  .itemCart .breakdown .remove button .icon {
+    transform: translateX(4.353vw);
+    height: 1.928vw;
+    width: 1.528vw; }
+  .itemCart .breakdown .remove button svg {
+    width: .898vw;
+    fill: #eee; }
+  .itemCart .breakdown .remove button:hover .icon {
+    width: 6.1%; }
+  .itemCart .breakdown .remove button {
+    width: 6.321vw;
+    height: 3vw; } }
+
+@media screen and (max-width: 700px) {
+  .itemCart .breakdown .remove button {
+    width: 7.821vw; } }
+
+@media screen and (max-width: 450px) {
+  .itemCart .breakdown .remove button {
+    width: 8.321vw; } }
+
 .form {
   margin: 5%;
   font-family: 'Poppins', sans-serif; }
@@ -8896,31 +8972,56 @@ nav {
   .form input.danger {
     border: 0.2vw solid red; }
 
-.returnStore button {
-  cursor: pointer;
-  height: 2.6em;
-  font-weight: 700;
-  font-family: 'Cinzel', serif;
-  transition: all .2s;
-  padding-left: 3px;
-  border-radius: 7.321vw;
-  background: white;
-  border: 0.073vw solid transparent;
+@media screen and (min-width: 1500px) {
+  form label {
+    font-size: 1vw; }
+  form input,
+  form select {
+    height: 2vw; }
+  form select option {
+    font-size: 2.5vw; }
+  form .form-select {
+    font-size: 1vw; } }
+
+.returnStore {
+  height: 100%;
   display: flex;
-  align-items: center;
-  font-size: 1.464vw;
-  color: #1f536b; }
+  align-items: center; }
+  .returnStore button {
+    cursor: pointer;
+    height: 2.6em;
+    font-weight: 700;
+    font-family: 'Cinzel', serif;
+    transition: all .2s;
+    padding-left: 3px;
+    border-radius: 7.321vw;
+    background: white;
+    border: 0.073vw solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 1.464vw;
+    color: #1f536b; }
+  .returnStore button > svg {
+    width: 2.709vw;
+    transition: transform .3s ease-in-out;
+    color: #1f536b; }
+  .returnStore button:hover svg {
+    transform: translateX(-0.686vw); }
+  .returnStore button:active {
+    transform: scale(0.95); }
 
-.returnStore button > svg {
-  width: 2.709vw;
-  transition: transform .3s ease-in-out;
-  color: #1f536b; }
+@media screen and (min-width: 1500px) {
+  .returnStore button {
+    font-size: 1vw; } }
 
-.returnStore button:hover svg {
-  transform: translateX(-0.686vw); }
-
-.returnStore button:active {
-  transform: scale(0.95); }
+@media screen and (max-width: 450px) {
+  .returnStore {
+    height: 24px;
+    margin-top: 1%;
+    display: flex;
+    align-items: center; }
+    .returnStore button {
+      font-size: 2.464vw; } }
 
 body {
   font-family: 'Cinzel', serif; }
