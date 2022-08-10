@@ -19,7 +19,7 @@ The page in turn is responsive (adapts to different screen sizes). The SASS prep
 
 ## Installation
 
-The `npm install` (or `npm i` ) command must be executed in the console to install the dependencies, which are already configured with the version described above in the **package.json** file.
+You must download the files, open them in a code editor (eg VSCode) and then execute the command `npm install` (or `npm i` ) in the console to install the dependencies, which are already configured with the version described above in the **package.json** file.
 
 Once the dependencies are installed, execute the `npm start` command in the console.
 
@@ -48,7 +48,7 @@ La página a su vez es responsive (se adapta a distintos tamaños de pantalla). 
 
 ## Instalación
 
-Se debe ejecutar en consola el comando `npm install` (o `npm i` ) para la instalación de las dependencias, las cuales ya están configuradas con la versión descripta mas arriba en el archivo **package.json**.
+Se deben descargar los archivos, abrirlos en un editor de código (ej. VSCode) y luego ejecutar en consola el comando `npm install` (o `npm i` ) para la instalación de las dependencias, las cuales ya están configuradas con la versión descripta mas arriba en el archivo **package.json**.
 
 Una vez instaladas las dependencias ejecutar en consola el comando `npm start`.
 
