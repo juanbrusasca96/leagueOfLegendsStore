@@ -104,11 +104,34 @@
     .itemDetail {
 
         h1 {
-            font-size: 3.2vw;
+            font-size: 3.5vw;
         }
 
         h3 {
-            font-size: 2.4vw;
+            font-size: 3vw;
+        }
+
+        .imagePositionDifficultPriceBiography {
+            display: flex;
+            flex-direction: column;
+
+            .imagePositionDifficultPrice {
+
+                img {
+                    width: 80%;
+                    max-height: 80%;
+                    display: flex;
+                    align-self: center;
+                }
+            }
+
+            .biography {
+                width: 90%;
+                margin: 1%;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+            }
         }
     }
 }

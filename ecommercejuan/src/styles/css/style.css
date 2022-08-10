@@ -8654,9 +8654,23 @@ nav {
 
 @media screen and (max-width: 450px) {
   .itemDetail h1, .itemDetail .h1 {
-    font-size: 3.2vw; }
+    font-size: 3.5vw; }
   .itemDetail h3, .itemDetail .h3 {
-    font-size: 2.4vw; } }
+    font-size: 3vw; }
+  .itemDetail .imagePositionDifficultPriceBiography {
+    display: flex;
+    flex-direction: column; }
+    .itemDetail .imagePositionDifficultPriceBiography .imagePositionDifficultPrice img {
+      width: 80%;
+      max-height: 80%;
+      display: flex;
+      align-self: center; }
+    .itemDetail .imagePositionDifficultPriceBiography .biography {
+      width: 90%;
+      margin: 1%;
+      display: flex;
+      flex-direction: column;
+      align-self: center; } }
 
 .difficult {
   width: 7.321vw;
@@ -8724,7 +8738,7 @@ nav {
 
 @media screen and (max-width: 450px) {
   .button button {
-    font-size: 2.3vw; } }
+    font-size: 2vw; } }
 
 .cart {
   margin-top: 1%;
@@ -8932,10 +8946,8 @@ nav {
   .itemCart .breakdown h5, .itemCart .breakdown .h5 {
     font-size: 1vw; }
   .itemCart .breakdown img {
-    margin: 2%;
     width: 12vw;
-    height: 7vw;
-    border-radius: 10px; }
+    height: 7vw; }
   .itemCart .breakdown .remove button .icon {
     transform: translateX(4.353vw);
     height: 1.928vw;
@@ -8955,20 +8967,30 @@ nav {
 
 @media screen and (max-width: 450px) {
   .itemCart .breakdown .plusMinus {
-    width: 3vw;
-    font-size: 1.6vw;
+    width: 4vw;
+    font-size: 2vw;
     margin-left: 1%; }
   .itemCart .breakdown h3, .itemCart .breakdown .h3 {
-    font-size: 2.5vw; }
+    font-size: 3.5vw; }
   .itemCart .breakdown h5, .itemCart .breakdown .h5 {
     font-size: 2vw; }
   .itemCart .breakdown img {
-    margin: 2%;
-    width: 17vw;
-    height: 10vw;
-    border-radius: 10px; }
+    width: 20vw;
+    height: 13vw; }
+  .itemCart .breakdown .remove button .icon {
+    transform: translateX(8.353vw);
+    height: 2.928vw;
+    width: 2.528vw; }
+  .itemCart .breakdown .remove button svg {
+    width: 1.898vw;
+    fill: #eee; }
+  .itemCart .breakdown .remove button:hover .icon {
+    width: 6.1%; }
   .itemCart .breakdown .remove button {
-    width: 8.321vw; } }
+    width: 13.321vw;
+    height: 5vw; }
+  .itemCart .breakdown .remove span {
+    font-size: 2vw; } }
 
 .form {
   margin: 5%;

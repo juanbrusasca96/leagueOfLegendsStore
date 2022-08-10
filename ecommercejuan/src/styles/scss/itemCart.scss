@@ -146,10 +146,8 @@
             }
 
             img {
-                margin: 2%;
                 width: 12vw;
                 height: 7vw;
-                border-radius: 10px;
             }
 
             .remove {
@@ -193,27 +191,47 @@
     .itemCart {
         .breakdown {
             .plusMinus {
-                width: 3vw;
-                font-size: 1.6vw;
+                width: 4vw;
+                font-size: 2vw;
                 margin-left: 1%;
             }
 
             h3 {
-                font-size: 2.5vw;
+                font-size: 3.5vw;
             }
 
             h5 {
                 font-size: 2vw;
             }
+
             img {
-                margin: 2%;
-                width: 17vw;
-                height: 10vw;
-                border-radius: 10px;
+                width: 20vw;
+                height: 13vw;
             }
+
             .remove {
+                button .icon {
+                    transform: translateX(8.353vw);
+                    height: 2.928vw;
+                    width: 2.528vw;
+                }
+
+                button svg {
+                    width: 1.898vw;
+                    fill: #eee;
+                }
+
+                button:hover .icon {
+                    width: 6.1%;
+                }
+
                 button {
-                    width: 8.321vw;
+                    width: 13.321vw;
+                    height: 5vw;
+                }
+
+                span {
+                    font-size: 2vw;
                 }
             }
         }
