@@ -1,0 +1,39 @@
+.plusMinus {
+    width: 4vw;
+    display: flex;
+    flex-direction: column;
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        color: white;
+    }
+
+    .plus {
+        background-color: $colorPlus;
+        border: 1px solid $colorPlus;
+        border-radius: 0.512vw 0.512vw 0px 0px;
+
+        &:hover {
+            background-color: darken($colorPlus, 10%);
+        }
+    }
+
+    .minus {
+        background-color: $colorMinus;
+        border: 0.073vw solid $colorMinus;
+        border-radius: 0px 0px 0.512vw 0.512vw;
+
+        &:hover {
+            background-color: darken($colorMinus, 10%);
+        }
+    }
+}

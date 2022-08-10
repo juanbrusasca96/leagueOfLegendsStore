@@ -1,24 +1,40 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
 import { CartContext } from '../helpers/CartContext';
-import { convertir } from '../helpers/getFetch';
+import { convert } from '../helpers/getConvert';
+import Button from './Button';
+import ButtonReturnStore from './ButtonReturnStore';
+import ItemCart from './ItemCart';
 
 export default function Cart() {
-  const [itemsCart, addItem, removeItem, clear, isInCart] = useContext(CartContext);
+  const [itemsCart, addItem, removeItem, clear, isInCart, getQuantity, find, getTotal] = useContext(CartContext);
+
+
   return (
     <div className='cart'>
       {itemsCart.length === 0 ?
-        <div>
+        <div className='noItems'>
           <h1>No hay items en el carrito</h1>
-          <Link to='/'><h3>Volver a la tienda</h3></Link>
+          <Link to='/' style={{ textDecoration: 'none' }}>
+            <ButtonReturnStore />
+          </Link>
         </div>
         :
         <div>
-          {itemsCart.map(i => <div className='desglose'><img src={i.item.foto} /><h3>{`${i.item.nombre}, ${i.quantity} `}<button onClick={() => removeItem(i.item.id)}>X</button></h3></div>)}
-          <div className='precio'>
-            <h4>Total: ${convertir(itemsCart.reduce((prev, current) => prev + current.item.precio * current.quantity, 0))}</h4>
+          {itemsCart.map(i =>
+            <ItemCart champion={i.item} />
+          )}
+          <div className='price'>
+            <h4>Total: ${convert(getTotal())}</h4>
+            <div className='btns'>
+              <div className='buttonDelete'>
+                <Button text={'BORRAR TODOS'} onClick={() => clear()} />
+              </div>
+              <Link to='/form'>
+                <Button text={'TERMINAR COMPRA'} />
+              </Link>
+            </div>
           </div>
-          <button onClick={() => clear()}>Borrar todos</button>
         </div>
       }
     </div>

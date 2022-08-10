@@ -1,8 +1,6 @@
-@import 'colores.scss';
-
-$navbar-light-color: rgba($colorTexto, .65);
-$navbar-light-hover-color: rgba($colorTexto, .8);
-$navbar-light-active-color: rgba($colorBrand, 1);
+$navbar-light-color: $colorTexto;
+$navbar-light-hover-color: rgba($colorTexto, .65);
+$navbar-light-active-color: $colorBrand;
 $navbar-light-brand-color: $colorBrand;
 $navbar-light-brand-hover-color: $colorBrand;
 
@@ -10,6 +8,19 @@ $navbar-light-brand-hover-color: $colorBrand;
 
 nav {
     background-color: $colorNavbar;
+    font-size: 1.5vw;
+
+    .navbar-brand{
+        font-size: 2vw;
+        img{
+            width: 7.687vw;
+            height: 3.221vw;
+        }
+    }
+
+    li {
+        margin-left: 3%;
+    }
 
     .NavLink {
         text-decoration: none;
@@ -18,4 +29,66 @@ nav {
     p {
         color: $colorTexto;
     }
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        font-size: 2.7vw;
+
+        .navbar-brand{
+            font-size: 2.5vw;
+            img{
+                width: 9.687vw;
+                height: 4.221vw;
+            }
+        }
+
+        .navbar-collapse {
+            display: flex;
+
+            .navbar-nav {
+                display: flex;
+                flex-direction: row;
+
+                .nav-item {
+                    margin-left: 15%;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    nav {
+        font-size: 3.5vw;
+
+        .navbar-brand{
+            font-size: 3vw;
+            img{
+                width: 11.687vw;
+                height: 5.221vw;
+            }
+        }
+
+        .navbar-collapse {
+            display: flex;
+            flex-direction: column;
+
+            .navbar-nav {
+                display: flex;
+                flex-direction: column;
+
+                .nav-item {
+                    margin-left: 15%;
+                }
+            }
+
+            .cartWidget {
+                width: 100%;
+                display: flex;
+            }
+        }
+    }
+
 }

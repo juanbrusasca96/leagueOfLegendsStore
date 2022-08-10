@@ -1,11 +1,10 @@
-@import 'colores.scss';
-
 .item {
     margin: 15px;
+    font-size: 1.3vw;
 
     .card {
-        max-width: 290px;
-        max-height: 354px;
+        width: 21vw;
+        max-height: 100%;
         padding: .8em;
         background: #f5f5f5;
         position: relative;
@@ -16,14 +15,14 @@
     .card-img {
         background-color: #ffcaa6;
         max-height: 40%;
-        max-width: 100%;
+        width: 100%;
         border-radius: .5rem;
         transition: .3s ease;
 
-        // img {
-        //     height: 100%;
-        //     width: 100%;
-        // }
+        img {
+            border-radius: 8px;
+        }
+
     }
 
     .card-info {
@@ -31,8 +30,8 @@
     }
 
     svg {
-        width: 25px;
-        height: 25px;
+        width: 2vw;
+        height: 2vw;
     }
 
     .card-footer {
@@ -41,7 +40,16 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 10px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-bottom: 8px;
         border-top: 1px solid #ddd;
+
+        .plusMinus {
+            width: 3vw;
+            font-size: 1vw;
+            margin-left: 20%;
+        }
     }
 
     /*Text*/
@@ -68,7 +76,7 @@
 
     /*Hover*/
     .card-img:hover {
-        transform: translateY(-15%);
+        transform: translateY(-5%);
         box-shadow: rgba($colorBrand, 0.25) 0px 13px 47px -5px, rgba($colorTexto, 0.3) 0px 8px 16px -8px;
     }
 
@@ -77,4 +85,49 @@
         background-color: $colorBrand;
     }
 
+}
+
+@media screen and (max-width: 700px) {
+    .item {
+        font-size: 2vw;
+
+        .card {
+            width: 28vw;
+        }
+
+        svg {
+            width: 3.5vw;
+            height: 3.5vw;
+        }
+
+        .card-footer {
+            .plusMinus {
+                font-size: 1.5vw;
+                margin-left: 20%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .item {
+        font-size: 3vw;
+
+        .card {
+            width: 39vw;
+        }
+
+        svg {
+            width: 4.75vw;
+            height: 4.75vw;
+        }
+
+        .card-footer {
+            .plusMinus {
+                width: 4vw;
+                font-size: 2vw;
+                margin-left: 10%;
+            }
+        }
+    }
 }

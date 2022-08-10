@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# League of legends Store [EN]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+League of legends Store is a personal project, an e-commerce based on React where the purchase of champions (characters within the game) of the well-known video game League of legends is simulated. Within the page you can:
+- Add champions to cart.
+- Increase or decrease the amount you want to buy.
+- Delete champions individually within the cart.
+- Delete all the champions that are in the cart.
+- Filter by category (position of the champion within the game).
+- Access the details of each champion.
+- Generate a purchase order by completing a form, where it is controlled that all the fields are complete and correct.
 
-## Available Scripts
+The page in turn is responsive (adapts to different screen sizes). The SASS preprocessor was used for styling.
 
-In the project directory, you can run:
+## Dependencies
 
-### `npm start`
+- [Bootstrap] v5.2.0 - Used to layout and style the page, especially the NavBar.
+- [Firebase] v9.9.0 - Used to store the products (champions) displayed on the page persistently, and to store the list of orders.
+- [React-router-dom] v6.3.0 - Add routing to my page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The `npm install` (or `npm i` ) command must be executed in the console to install the dependencies, which are already configured with the version described above in the **package.json** file.
 
-### `npm test`
+Once the dependencies are installed, execute the `npm start` command in the console.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## See for yourself
+Link to the site:
 
-### `npm run build`
+ ------------------------------------------------------------------------------------
+# League of legends Store [ES]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+League of legends Store es un proyecto personal, un e-commerce realizado a base de React en dónde se simula la compra de campeones (personajes dentro del juego) del conocido videojuego League of legends. Dentro de la pagina se puede:
+- Agregar campeones al carrito.
+- Aumentar o disminuir la cantidad que desea comprar.
+- Eliminar campeones individualmente dentro del carrito.
+- Eliminar todos los campeones que estén en el carrito.
+- Filtrar por categoría (posición del campeón dentro del juego).
+- Acceder al detalle de cada campeón.
+- Generar una orden de compra completando un formulario, donde se controla que todos los campos estén completos y de forma correcta.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+La página a su vez es responsive (se adapta a distintos tamaños de pantalla). Se utilizo el preprocesador SASS para el estilado.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencias
 
-### `npm run eject`
+- [Bootstrap] v5.2.0 - Usado para maquetar y dar estilos a la pagina, sobre todo al NavBar.
+- [Firebase] v9.9.0 - Usado para almacenar los productos (campeones) mostrados en la página de forma persistente, y para almacenar el listado de órdenes.
+- [React-router-dom] v6.3.0 - Agrega enrutado a mi pagina.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Instalación
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Se debe ejecutar en consola el comando `npm install` (o `npm i` ) para la instalación de las dependencias, las cuales ya están configuradas con la versión descripta mas arriba en el archivo **package.json**.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Una vez instaladas las dependencias ejecutar en consola el comando `npm start`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Véalo usted mismo
+Link al sitio: 

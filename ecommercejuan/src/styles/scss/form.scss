@@ -1,0 +1,54 @@
+.form {
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+
+    .generatedOrder {
+        h1 {
+            font-size: 2.7vw;
+        }
+
+        h3 {
+            font-size: 2vw;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        button {
+            margin: 0;
+        }
+    }
+
+    .col-md-6,
+    .col-12,
+    .col-md-4,
+    .col-md-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .generateReturn {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 1%;
+
+
+        .generate {
+            margin-left: 3%;
+        }
+    }
+
+    p.danger {
+        color: red;
+        font-size: 0.952vw;
+    }
+
+    input.danger {
+        border: 0.2vw solid red;
+    }
+}

@@ -7,9 +7,13 @@ export const CartProvider = ({ children }) => {
 
     const addItem = (item, quantity) => {
         if (isInCart(item.id)) {
-            let i = removeItem(item.id);
-            i.quantity += quantity;
-            setItemsCart(oldItems => [...oldItems, i]);
+            let index = itemsCart.indexOf(find(item.id))
+            let i = itemsCart.find(i => i.item.id === item.id)
+            i.quantity = quantity;
+            let firstHalf = itemsCart.slice(0, index)
+            firstHalf.push(i)
+            let secondHalf = itemsCart.slice(index + 1)
+            setItemsCart(firstHalf.concat(secondHalf))
         }
         else {
             setItemsCart(oldItems => [...oldItems, { item: item, quantity: quantity }]);
@@ -17,7 +21,7 @@ export const CartProvider = ({ children }) => {
     };
 
     const removeItem = (id) => {
-        let item = itemsCart.find(i => i.item.id === id);
+        let item = find(id);
         setItemsCart(items => items.filter(i => i.item.id !== id));
         return item;
     };
@@ -27,12 +31,23 @@ export const CartProvider = ({ children }) => {
     };
 
     const isInCart = (id) => {
-        return !!itemsCart.find(i => i.item.id === id);
+        return !!find(id);
     };
 
-    console.log(itemsCart);
+    const getQuantity = (id) => {
+        return isInCart(id) ? find(id).quantity : 1;
+    }
+
+    const find = (id) => {
+        return itemsCart.find(i => i.item.id === id);
+    }
+
+    const getTotal = () => {
+        return itemsCart.reduce((prev, current) => prev + current.item.price * current.quantity, 0)
+    }
+
     return (
-        <CartContext.Provider value={[itemsCart, addItem, removeItem, clear, isInCart]}>
+        <CartContext.Provider value={[itemsCart, addItem, removeItem, clear, isInCart, getQuantity, find, getTotal]}>
             {children}
         </CartContext.Provider>
     )

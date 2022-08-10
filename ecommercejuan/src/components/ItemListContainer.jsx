@@ -5,26 +5,26 @@ import ItemList from './ItemList';
 import Loading from './Loading';
 
 export default function ItemListContainer() {
-  const [campeones, setCampeones] = useState([]);
+  const [champions, setChampions] = useState([]);
   const [loading, setLoading] = useState(true);
-  const { posicionId } = useParams();
+  const { positionId } = useParams();
 
   useEffect(() => {
     const db = getFirestore()
     const queryCollection = collection(db, 'campeones')
-    if (posicionId) {
-      getDocs(queryCollection).then(resp => setCampeones(resp.docs.map(camp => ({ id: camp.id, ...camp.data() })).filter(camp => camp.posicion.includes(posicionId)))).catch(err => console.log(err)).finally(() => setLoading(false));
+    if (positionId) {
+      getDocs(queryCollection).then(resp => setChampions(resp.docs.map(champ => ({ id: champ.id, ...champ.data() })).filter(champ => champ.position.includes(positionId)))).catch(err => console.log(err)).finally(() => setLoading(false));
     } else {
-      getDocs(queryCollection).then(resp => setCampeones(resp.docs.map(camp => ({ id: camp.id, ...camp.data() })))).catch(err => console.log(err)).finally(() => setLoading(false));
+      getDocs(queryCollection).then(resp => setChampions(resp.docs.map(champ => ({ id: champ.id, ...champ.data() })))).catch(err => console.log(err)).finally(() => setLoading(false));
     }
-  }, [posicionId])
+  }, [positionId])
 
   return (
     <div className='itemListContainer'>
       {loading ?
         <Loading />
         :
-        <ItemList campeones={campeones} />
+        <ItemList champions={champions} />
       }
     </div>
   )

@@ -1,14 +1,27 @@
-@import 'colores.scss';
-
 .itemDetail {
+    background-color: rgb(233, 233, 233);
+    border: 0px solid transparent;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    border-radius: 30px;
     color: $colorNavbar;
-    margin: 3%;
+    margin: 1%;
 
-    .imagenPosicionDificultadPrecioBiografia {
+    h1 {
+        margin-top: 2%;
+        font-size: 2.8vw;
+    }
+
+    h3 {
+        font-size: 2vw;
+    }
+
+
+    .imagePositionDifficultPriceBiography {
         display: flex;
         font-family: 'Poppins', sans-serif;
 
-        .imagenPosicionDificultadPrecio {
+        .imagePositionDifficultPrice {
             margin: 2%;
             width: 100%;
             display: flex;
@@ -16,12 +29,13 @@
 
             img {
                 width: 100%;
-                height: 100%;
+                max-height: 100%;
+                border: 0px solid transparent;
+                border-radius: 30px;
             }
 
-            .posicionDificultadPrecio {
+            .positionDifficultPrice {
                 margin-top: 2%;
-                // border: 1px solid black;
                 display: flex;
                 flex-direction: column;
                 display: grid;
@@ -31,32 +45,32 @@
                     margin-top: 2%;
                 }
 
-                .posicion {
+                .position {
                     margin-top: 2%;
                     grid-area: columna1;
                 }
 
-                .dificultadPadre {
+                .difficultDad {
                     grid-area: columna2;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
-                    .dificultad {
+                    .difficult {
                         margin-left: 2%;
                         display: flex;
                     }
                 }
 
-                .precio {
+                .price {
                     grid-area: columna3;
                 }
             }
         }
 
-        .biografia {
+        .biography {
             width: 100%;
-            margin: 2%;
+            margin: 1%;
         }
     }
 

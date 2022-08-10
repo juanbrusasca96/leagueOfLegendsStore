@@ -1,0 +1,129 @@
+.itemCart {
+    .breakdown {
+        margin-bottom: 2%;
+        display: flex;
+        width: 90vw;
+        border-bottom: 1px solid #a3a3a3;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3vw;
+        background-color: #ddd;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+
+        .plusMinus {
+            font-size: 1.3vw;
+            margin-left: 1%;
+        }
+
+        h3 {
+            font-size: 2vw;
+        }
+
+        h5 {
+            font-size: 1.5vw;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 60%;
+        }
+
+        .plusMinus {
+            display: flex;
+            justify-content: center;
+        }
+
+        .remove {
+            margin-right: 1%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            span {
+                font-size: 1vw;
+            }
+
+            button {
+                width: 7.321vw;
+                height: 3.660vw;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                border: none;
+                border-radius: 0.366vw;
+                box-shadow: 0.073vw 0.073vw 0.220vw rgba(0, 0, 0, 0.15);
+                background: $colorButtonRed;
+            }
+
+            button,
+            button span {
+                transition: 200ms;
+            }
+
+            button .text {
+                transform: translateX(0.662vw);
+                color: white;
+                font-weight: bold;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            button .icon {
+                position: absolute;
+                border-left: 0.073vw solid #c41b1b;
+                transform: translateX(4.353vw);
+                height: 2.928vw;
+                width: 2.028vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            button svg {
+                width: 1.098vw;
+                fill: #eee;
+            }
+
+            button:hover {
+                background: #ff3636;
+            }
+
+            button:hover .text {
+                color: transparent;
+            }
+
+            button:hover .icon {
+                width: 6.9%;
+                border-left: none;
+                transform: translateX(0);
+            }
+
+            button:focus {
+                outline: none;
+            }
+
+            button:active .icon svg {
+                transform: scale(0.8);
+            }
+        }
+
+        .price {
+            display: flex;
+            justify-content: center;
+            width: 37%;
+        }
+
+        img {
+            margin: 2%;
+            width: 15vw;
+            height: 8vw;
+            border-radius: 10px;
+        }
+    }
+}

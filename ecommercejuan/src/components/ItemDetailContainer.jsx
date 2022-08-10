@@ -5,14 +5,14 @@ import ItemDetail from './ItemDetail';
 import Loading from './Loading';
 
 export default function ItemDetailContainer() {
-  const [campeon, setCampeon] = useState();
+  const [champion, setChampion] = useState();
   const [loading, setLoading] = useState(true);
   const { id } = useParams()
 
   useEffect(() => {
     const db = getFirestore();
     const queryCampeon = doc(db, 'campeones', id);
-    getDoc(queryCampeon).then(resp => setCampeon({ id: resp.id, ...resp.data() })).catch(err => console.log(err)).finally(() => setLoading(false));
+    getDoc(queryCampeon).then(resp => setChampion({ id: resp.id, ...resp.data() })).catch(err => console.log(err)).finally(() => setLoading(false));
   }, [])
 
   return (
@@ -20,7 +20,7 @@ export default function ItemDetailContainer() {
       {loading ?
         <Loading />
         :
-        <ItemDetail campeon={campeon} />
+        <ItemDetail champion={champion} />
       }
     </div>
   )

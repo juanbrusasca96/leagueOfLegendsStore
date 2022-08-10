@@ -1,3 +1,4 @@
+@import 'colores.scss';
 @import 'navBar.scss';
 @import 'cartWidget.scss';
 @import 'itemListContainer.scss';
@@ -6,9 +7,14 @@
 @import 'loading.scss';
 @import 'itemDetailContainer.scss';
 @import 'itemDetail.scss';
-@import 'dificultad.scss';
-@import 'itemCount.scss';
+@import 'difficult.scss';
+@import 'button.scss';
 @import 'cart.scss';
+@import 'itemCount.scss';
+@import 'plusMinus.scss';
+@import 'itemCart.scss';
+@import 'form.scss';
+@import 'buttonReturnStore.scss';
 
 body {
     font-family: 'Friz Quadrata Std', sans-serif;

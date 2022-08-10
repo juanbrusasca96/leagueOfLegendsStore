@@ -1,7 +1,7 @@
-@import 'colores.scss';
-
 .loading {
     margin-top: 3%;
+    display: flex;
+    justify-content: center;
 
     .scanner h1 {
         color: transparent;

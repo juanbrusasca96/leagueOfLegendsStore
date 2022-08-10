@@ -1,0 +1,31 @@
+.returnStore {
+    button {
+        cursor: pointer;
+        height: 2.6em;
+        font-weight: 700;
+        font-family: 'Friz Quadrata Std', sans-serif;
+        transition: all .2s;
+        padding-left: 3px;
+        border-radius: 7.321vw;
+        background: white;
+        border: 0.073vw solid transparent;
+        display: flex;
+        align-items: center;
+        font-size: 1.464vw;
+        color: $colorNavbar;
+    }
+
+    button>svg {
+        width: 2.709vw;
+        transition: transform .3s ease-in-out;
+        color: $colorNavbar;
+    }
+
+    button:hover svg {
+        transform: translateX(-0.686vw);
+    }
+
+    button:active {
+        transform: scale(0.95);
+    }
+}

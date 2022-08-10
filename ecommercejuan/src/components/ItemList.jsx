@@ -1,10 +1,10 @@
 import React from 'react'
 import Item from './Item'
 
-export default function ItemList({ campeones }) {
+export default function ItemList({ champions }) {
   return (
     <div className='itemList'>
-      {campeones.map(camp => <Item key={camp.id} id={camp.id} posicion={camp.posicion} nombre={camp.nombre} precio={camp.precio} foto={camp.foto} />)}
+      {champions.map(champ => <Item key={champ.id} champion={champ} />)}
     </div>
   )
 }
