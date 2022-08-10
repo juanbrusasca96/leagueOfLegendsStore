@@ -24,7 +24,7 @@ The `npm install` (or `npm i` ) command must be executed in the console to insta
 Once the dependencies are installed, execute the `npm start` command in the console.
 
 ## See for yourself
-Link to the site:
+Link to the site: https://leagueoflegendsstore.netlify.app/
 
  ------------------------------------------------------------------------------------
 # League of legends Store [ES]
@@ -53,4 +53,4 @@ Se debe ejecutar en consola el comando `npm install` (o `npm i` ) para la instal
 Una vez instaladas las dependencias ejecutar en consola el comando `npm start`.
 
 ## Véalo usted mismo
-Link al sitio: 
+Link al sitio: https://leagueoflegendsstore.netlify.app/
