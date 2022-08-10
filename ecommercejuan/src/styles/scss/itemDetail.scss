@@ -99,3 +99,16 @@
         }
     }
 }
+
+@media screen and (max-width: 450px) {
+    .itemDetail {
+
+        h1 {
+            font-size: 3.2vw;
+        }
+
+        h3 {
+            font-size: 2.4vw;
+        }
+    }
+}

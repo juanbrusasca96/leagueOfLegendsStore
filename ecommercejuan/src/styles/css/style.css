@@ -8652,6 +8652,12 @@ nav {
     width: 100%;
     max-height: 70%; } }
 
+@media screen and (max-width: 450px) {
+  .itemDetail h1, .itemDetail .h1 {
+    font-size: 3.2vw; }
+  .itemDetail h3, .itemDetail .h3 {
+    font-size: 2.4vw; } }
+
 .difficult {
   width: 7.321vw;
   height: 1.464vw;
@@ -8764,6 +8770,12 @@ nav {
   .cart .price h4, .cart .price .h4 {
     font-size: 1.5vw; } }
 
+@media screen and (max-width: 450px) {
+  .cart .noItems h1, .cart .noItems .h1 {
+    font-size: 2.8vw; }
+  .cart .price h4, .cart .price .h4 {
+    font-size: 2.8vw; } }
+
 .itemCount {
   display: flex;
   flex-direction: column;
@@ -8783,10 +8795,16 @@ nav {
 
 @media screen and (max-width: 700px) {
   .itemCount .buttonBuy .plusMinus {
+    display: flex;
+    justify-content: center;
     width: 4vw;
     font-size: 1.5vw; }
     .itemCount .buttonBuy .plusMinus button {
       height: 30%; } }
+
+@media screen and (max-width: 450px) {
+  .itemCount .buttonBuy .plusMinus button {
+    height: 20%; } }
 
 .plusMinus {
   width: 4vw;
@@ -8936,6 +8954,19 @@ nav {
     width: 7.821vw; } }
 
 @media screen and (max-width: 450px) {
+  .itemCart .breakdown .plusMinus {
+    width: 3vw;
+    font-size: 1.6vw;
+    margin-left: 1%; }
+  .itemCart .breakdown h3, .itemCart .breakdown .h3 {
+    font-size: 2.5vw; }
+  .itemCart .breakdown h5, .itemCart .breakdown .h5 {
+    font-size: 2vw; }
+  .itemCart .breakdown img {
+    margin: 2%;
+    width: 17vw;
+    height: 10vw;
+    border-radius: 10px; }
   .itemCart .breakdown .remove button {
     width: 8.321vw; } }
 

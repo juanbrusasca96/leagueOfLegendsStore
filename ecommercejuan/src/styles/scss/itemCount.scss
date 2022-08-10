@@ -32,6 +32,8 @@
     .itemCount {
         .buttonBuy {
             .plusMinus {
+                display: flex;
+                justify-content: center;
                 width: 4vw;
                 font-size: 1.5vw;
 
@@ -43,4 +45,17 @@
     }
 
 
+}
+
+@media screen and (max-width: 450px) {
+    .itemCount {
+        .buttonBuy {
+            .plusMinus {
+
+                button {
+                    height: 20%;
+                }
+            }
+        }
+    }
 }

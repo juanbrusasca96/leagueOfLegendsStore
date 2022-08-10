@@ -192,6 +192,25 @@
 @media screen and (max-width: 450px) {
     .itemCart {
         .breakdown {
+            .plusMinus {
+                width: 3vw;
+                font-size: 1.6vw;
+                margin-left: 1%;
+            }
+
+            h3 {
+                font-size: 2.5vw;
+            }
+
+            h5 {
+                font-size: 2vw;
+            }
+            img {
+                margin: 2%;
+                width: 17vw;
+                height: 10vw;
+                border-radius: 10px;
+            }
             .remove {
                 button {
                     width: 8.321vw;
